@@ -57,9 +57,9 @@ def status_package():
         Dictionary 'package' of ship data
 
         """
-        package = {};					
-        #may want to consider replacing with structured numpy array ... more versatile, faster operations ... drawback is need to use pickling before sending over socket
-	package["boat_lat"] = boat_lat
+	package = {};   	#may want to consider replacing with structured numpy array ... more versatile, faster operations ... drawback is need to use pickling before sending over socket
+	
+        package["boat_lat"] = boat_lat
 	package["boat_lon"] = boat_lon
 	package["wind_heading"] = wind_heading
 	package["wind_speed"] = wind_speed
